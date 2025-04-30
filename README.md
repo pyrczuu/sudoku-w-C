@@ -1,4 +1,5 @@
 # 🔢 Sudoku
+## ℹ️ Prosty program do gry w sudoku napisany w C. 
 ## 💻 Kompilacja
 Projekt zawiera plik .exe, jeśli chcemy zbudować własny to powinno zadziałać, zakładając że jesteśmy w folderze projektu.
 
