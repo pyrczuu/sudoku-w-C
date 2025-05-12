@@ -96,7 +96,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -111,6 +112,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "engine.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "solver.h",
 			"sourceGroupIndex" : 1
 		}
 	],

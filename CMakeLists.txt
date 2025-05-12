@@ -4,4 +4,5 @@ project(sudoku C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(sudoku main.c
-        engine.h)
+        engine.h
+        solver.h)
