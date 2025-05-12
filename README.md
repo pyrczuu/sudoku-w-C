@@ -20,6 +20,9 @@ https://github.com/user-attachments/assets/836fac86-0f24-4fb1-a9c5-0d3c21d201e6
 
 ❌ Statystyki 
 
+# ‼️PATCH 1.2
+##  NA BRANCH SOLVER DODANO SOLVER NA SYMULOWANYM WYŻARZANIU 🤯🤯
+
 ![mem](https://github.com/user-attachments/assets/ae129d91-a418-4bec-802a-64551599183a)
 
 
