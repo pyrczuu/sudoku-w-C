@@ -19,7 +19,7 @@ https://github.com/user-attachments/assets/836fac86-0f24-4fb1-a9c5-0d3c21d201e6
 ![mem](https://github.com/user-attachments/assets/ae129d91-a418-4bec-802a-64551599183a)
 
 # 🗒️ TODO:
-> Sprawdzanie czy jest jedno rozwiązanie
-> Cofanie ruchu
-> Statystyki gracza
+- Sprawdzanie czy jest jedno rozwiązanie
+- Cofanie ruchu
+- Statystyki gracza
 
