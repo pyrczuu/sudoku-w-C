@@ -2,7 +2,7 @@
 #define ENGINE_H
 #include <math.h>
 #include <stdlib.h>
-#include <conio.h>
+//#include <conio.h>
 #include <ctype.h>
 
 int generateRandomNumber(int min, int max) {
