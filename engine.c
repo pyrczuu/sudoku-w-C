@@ -156,24 +156,55 @@ void freeGrid(int **grid, int size) {
     free(grid);
 }
 
-int** sudokuGenerator(int size, int k) {
-    int **grid = (int**) malloc(size * sizeof(int*));
+int countSolution(int **grid, int size) {
+    int total_solutions = 0;
     for (int i = 0; i < size; i++) {
-        grid[i] = (int*) malloc(size * sizeof(int));
         for (int j = 0; j < size; j++) {
-            grid[i][j] = 0;
+            if (grid[i][j] == 0) {
+                for (int num = 1; num <= size; num++) {
+                    if (checkIfSafe(grid, size, i, j, num)) {
+                        grid[i][j] = num;
+                        total_solutions += countSolution(grid, size);
+                        grid[i][j] = 0;
+                        if (total_solutions > 1) {
+                            return total_solutions;
+                        }
+                    }
+                }
+                return total_solutions;
+            }
         }
     }
-    fillDiagonal(grid, size);
-    if (!fillRemaining(grid, size, 0, 0)) {                     // fillRemaining zwraca true/false więc jeśli nie wyjdzie to abordaż
-        printf("Failed to generate valid Sudoku grid.\n");
-        freeGrid(grid, size);
-        return NULL;
-    }
-    removeKDigits(grid, size, k);
-
-    return grid;
+    return 1;
 }
+
+int** sudokuGenerator(int size, int k) {
+    while (1) { // petla do wygenerowania planszy z 1 rozwiazaniem
+        int **grid = (int**) malloc(size * sizeof(int*));
+        for (int i = 0; i < size; i++) {
+            grid[i] = (int*) malloc(size * sizeof(int));
+            for (int j = 0; j < size; j++) {
+                grid[i][j] = 0;
+            }
+        }
+
+        fillDiagonal(grid, size);
+        if (!fillRemaining(grid, size, 0, 0)) {
+            freeGrid(grid, size);
+            continue;
+        }
+        removeKDigits(grid, size, k);
+
+        int solutions = countSolution(grid, size);
+
+        if (solutions == 1) {
+            return grid;
+        }
+
+        freeGrid(grid, size);
+    }
+}
+
 
 void saveGridToFile(const char *filename, int **grid, int size, int k) {
     FILE *file = fopen(filename, "w");
@@ -220,8 +251,6 @@ int** loadGridFromFile(const char *filename, int *size, int *k) {
     fclose(file);
     return grid;
 }
-
-
 
 void printSudokuAsciiArt() {
     printf("   ,-,--.                             _,.---._    ,--.-.,-.               \n");

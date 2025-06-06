@@ -1,3 +1,11 @@
 # ninja log v6
 4	132	7687855475204481	CMakeFiles/sudoku.dir/main.c.obj	324116b82dda4df3
 133	236	7687855476495540	sudoku.exe	9dd59814d79fd5aa
+5	156	7709106819676106	CMakeFiles/sudoku.dir/main.c.obj	324116b82dda4df3
+16	164	7709106819777294	CMakeFiles/sudoku.dir/solver.c.obj	fcf9e757ce362a29
+18	94	7709107935739033	CMakeFiles/sudoku.dir/main.c.obj	324116b82dda4df3
+28	115	7709107935840104	CMakeFiles/sudoku.dir/solver.c.obj	fcf9e757ce362a29
+24	124	7709107935799488	CMakeFiles/sudoku.dir/engine.c.obj	8bdeb3054bff2d8c
+124	398	7709107936804870	sudoku.exe	6dcc91a01f57e987
+14	83	7709108180652828	CMakeFiles/sudoku.dir/main.c.obj	324116b82dda4df3
+84	172	7709108181354574	sudoku.exe	6dcc91a01f57e987

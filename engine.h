@@ -25,14 +25,13 @@ void removeKDigits(int **grid, int size,int k);
 
 void freeGrid(int **grid, int size);
 
+int countSolution(int **grid, int size);
+
 int** sudokuGenerator(int size, int k);
 
 void saveGridToFile(const char *filename, int **grid, int size, int k);
 
-
 int** loadGridFromFile(const char *filename, int *size, int *k);
-
-
 
 void printSudokuAsciiArt();
 
