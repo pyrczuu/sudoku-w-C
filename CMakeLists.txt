@@ -5,6 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(sudoku main.c
         engine.h
-        solver.h
+        anealing.h
         engine.c
-        solver.c)
+        anealing.c
+        genetic.h
+        genetic.c)

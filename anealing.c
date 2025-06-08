@@ -1,5 +1,5 @@
 #include "engine.h"
-#include "solver.h"
+#include "anealing.h"
 
 #include <math.h>
 #include <stdio.h>
@@ -8,6 +8,10 @@
 #include <time.h>
 
 int **copyGrid(int **grid, int size) {
+    if (!grid) {
+        printf("ERROR: grid is NULL\n");
+        return NULL;
+    }
     int **copy = (int**) malloc(size * sizeof(int*));
     if (!copy) {
         perror("Memory allocation failed for rows");
