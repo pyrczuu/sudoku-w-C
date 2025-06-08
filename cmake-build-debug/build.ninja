@@ -55,6 +55,24 @@ build CMakeFiles/sudoku.dir/main.c.obj: C_COMPILER__sudoku_unscanned_Debug C$:/C
   OBJECT_DIR = CMakeFiles\sudoku.dir
   OBJECT_FILE_DIR = CMakeFiles\sudoku.dir
 
+build CMakeFiles/sudoku.dir/engine.c.obj: C_COMPILER__sudoku_unscanned_Debug C$:/C/sudoku/engine.c || cmake_object_order_depends_target_sudoku
+  DEP_FILE = CMakeFiles\sudoku.dir\engine.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\sudoku.dir
+  OBJECT_FILE_DIR = CMakeFiles\sudoku.dir
+
+build CMakeFiles/sudoku.dir/anealing.c.obj: C_COMPILER__sudoku_unscanned_Debug C$:/C/sudoku/anealing.c || cmake_object_order_depends_target_sudoku
+  DEP_FILE = CMakeFiles\sudoku.dir\anealing.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\sudoku.dir
+  OBJECT_FILE_DIR = CMakeFiles\sudoku.dir
+
+build CMakeFiles/sudoku.dir/genetic.c.obj: C_COMPILER__sudoku_unscanned_Debug C$:/C/sudoku/genetic.c || cmake_object_order_depends_target_sudoku
+  DEP_FILE = CMakeFiles\sudoku.dir\genetic.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\sudoku.dir
+  OBJECT_FILE_DIR = CMakeFiles\sudoku.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target sudoku
@@ -63,7 +81,7 @@ build CMakeFiles/sudoku.dir/main.c.obj: C_COMPILER__sudoku_unscanned_Debug C$:/C
 #############################################
 # Link the executable sudoku.exe
 
-build sudoku.exe: C_EXECUTABLE_LINKER__sudoku_Debug CMakeFiles/sudoku.dir/main.c.obj
+build sudoku.exe: C_EXECUTABLE_LINKER__sudoku_Debug CMakeFiles/sudoku.dir/main.c.obj CMakeFiles/sudoku.dir/engine.c.obj CMakeFiles/sudoku.dir/anealing.c.obj CMakeFiles/sudoku.dir/genetic.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\sudoku.dir
