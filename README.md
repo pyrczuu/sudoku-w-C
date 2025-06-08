@@ -13,13 +13,14 @@ Chciałbym zaznaczyć, że ja pracowałem w programie CLion i gcc pobrałem żeb
 ## 🎮 Gameplay
 https://github.com/user-attachments/assets/836fac86-0f24-4fb1-a9c5-0d3c21d201e6
 
-# ‼️PATCH 1.2
-##  NA BRANCH SOLVER DODANO SOLVER NA SYMULOWANYM WYŻARZANIU 🤯🤯
+# ‼️PATCH NOTES
+### - teraz plansza zawsze ma tylko JEDNO rozwiązanie 👍👍
+### - dodano solver na SYMULOWANYM WYŻARZANIU 🤯🤯🤯
+### - dodano solver na ALGORYTMIE GENETYCZNYM (booo)
 
 ![mem](https://github.com/user-attachments/assets/ae129d91-a418-4bec-802a-64551599183a)
 
 # 🗒️ TODO:
-- Sprawdzanie czy jest jedno rozwiązanie
 - Cofanie ruchu
 - Statystyki gracza
 
